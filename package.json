@@ -1,0 +1,31 @@
+{
+  "name": "internal-api-educational",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandrofelici/Internal-Api-Educational.git"
+  },
+  "author": "Alessandro Felici",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessandrofelici/Internal-Api-Educational/issues"
+  },
+  "homepage": "https://github.com/alessandrofelici/Internal-Api-Educational#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "eslint": "^9.27.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
