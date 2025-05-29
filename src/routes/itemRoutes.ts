@@ -1,10 +1,10 @@
 import { Router } from 'express';
 import {
-    createItem,
-    getItems,
-    getItemById,
-    updateItem,
-    deleteItem,
+  createItem,
+  getItems,
+  getItemById,
+  updateItem,
+  deleteItem,
 } from '../controllers/itemController';
 
 const router = Router();
