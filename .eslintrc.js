@@ -1,11 +1,13 @@
-// eslint.config.js
-import { defineConfig } from 'eslint/config'
-
-export default defineConfig([
-    {
-        rules: {
-            semi: 'error',
-            'prefer-const': 'error',
-        },
+module.exports = {
+    parser: '@typescript-eslint/parser',
+    plugins: ['@typescript-eslint'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'prettier',
+    ],
+    env: {
+        node: true,
+        es6: true,
     },
-])
+};

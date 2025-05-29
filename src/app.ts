@@ -1,12 +1,15 @@
-const express = require('express')
-const app = express()
-const port = 3000
+import express from 'express';
+import itemRoutes from './routes/itemRoutes';
+import { errorHandler } from './middlewares/errorHandler';
 
-// TODO find out what types these should actually be
-app.get('/', (req: any, res: any) => {
-    res.send('Hello World!')
-})
+const app = express();
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+app.use(express.json());
+
+// Routes
+app.use('/api/items', itemRoutes);
+
+// Global error handler (should be after routes)
+app.use(errorHandler);
+
+export default app;
