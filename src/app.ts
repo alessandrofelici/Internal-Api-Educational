@@ -7,6 +7,9 @@ const app = express();
 
 app.use(express.json());
 
+// Static
+app.use(express.static(path.join(__dirname, 'static')));
+
 // Routes
 app.use('/api/accounts', accountRoutes);
 app.get('/', (req: any, res: any) => {
